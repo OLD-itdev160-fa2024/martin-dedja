@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Activity 2</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px 12px;
+        text-align: left;
+      }
+
+      th {
+        font-weight: bold;
+        background-color: #f2f2f2;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #f5f5f5;
+      }
+
+      tfoot {
+        background-color: #ddd;
+      }
+      tbody tr:hover {
+        background-color: #e0e0e0;
+      }
+      img {
+        width: 200px;
+        height: auto;
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://eaglesoftsolutions.com/">
+      <img src="images/ESS.png" alt="Description of the image" />
+    </a>
+
+    <table id="simple-table">
+      <tr>
+        <th>Book Title</th>
+        <th>Author</th>
+      </tr>
+      <tr>
+        <td>To Kill a Mockingbird</td>
+        <td>Harper Lee</td>
+      </tr>
+      <tr>
+        <td>1984</td>
+        <td>George Orwell</td>
+      </tr>
+      <tr>
+        <td>The Great Gatsby</td>
+        <td>F. Scott Fitzgerald</td>
+      </tr>
+    </table>
+
+    <table id="complex-table">
+      <thead>
+        <tr>
+          <th scope="col">Month</th>
+          <th scope="col" colspan="2">Sales Data</th>
+        </tr>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Product A</th>
+          <th scope="col">Product B</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>120 units</td>
+          <td>80 units</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>110 units</td>
+          <td rowspan="2">150 units (Feb & Mar combined)</td>
+        </tr>
+        <tr>
+          <td>March</td>
+          <td>130 units</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Sales for Q1: 590 units</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br />
+    <a href="mailto:dedjam@gmatc.matc.edu">Send me an email</a>
+  </body>
+</html>
